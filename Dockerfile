@@ -1,10 +1,4 @@
-FROM ubuntu
-
-RUN apt update
-
-RUN DEBIAN_FRONTEND=noninteractive apt install -y tzdata
-
-RUN apt install -y npm
+FROM node:14.18.2-slim
 
 WORKDIR /app
 
